@@ -11,7 +11,7 @@
 
 ### Create Github repository
 
-1. Login into Github.
+1. Login into [Github](https://github.com).
 2. Install [Azure Pipelines](https://github.com/marketplace/azure-pipelines) application in the Github marketplace.
 3. Create new private repository.
 4. Check the add `Readme` button.
@@ -47,3 +47,23 @@ git clone git@github.com:voxvanhieu/uda-project-building-cicd-pipeline.git
 ```
 
 After clone the repository, click the `Open Editor` button on the top bar of Cloud Shell to open file browser and editor.
+
+### Add Python files
+
+Create `hello.py` and `test_hello.py`.
+
+#### Create the Virtual Environment
+
+```
+# python3 -m venv ~/.myrepo
+# source ~/.myrepo/bin/activate
+make setup
+```
+
+#### Local test
+
+Run the following code in the local machine.
+
+```
+make all
+```
