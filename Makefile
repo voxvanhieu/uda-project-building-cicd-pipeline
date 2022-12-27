@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv ~/.uda-project-cicd &&\
+	python3 -m venv ~/.uda-project-cicd
 	source ~/.uda-project-cicd/bin/activate
 
 install:
