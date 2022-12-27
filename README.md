@@ -1,5 +1,7 @@
 # Udacity Lab - Building A CICD Pipeline
 
+[![Python application test with Github Actions](https://github.com/voxvanhieu/uda-project-building-cicd-pipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/voxvanhieu/uda-project-building-cicd-pipeline/actions/workflows/pythonapp.yml)
+
 This project is for the Udacity Azure DevOps program submission. Including the Trello Board, Project plan for Agile workflow and the Azure CICD pipelines instruction.
 
 ## Project Plan
