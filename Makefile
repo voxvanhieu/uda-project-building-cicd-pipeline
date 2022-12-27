@@ -1,6 +1,6 @@
 setup:
 	python3 -m venv ~/.uda-project-cicd
-	source ~/.uda-project-cicd/bin/activate
+	#source ~/.uda-project-cicd/bin/activate
 
 install:
 	pip install --upgrade pip &&\
