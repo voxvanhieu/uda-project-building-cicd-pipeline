@@ -48,6 +48,9 @@ stages:
       displayName: "Install requirements"
 
     - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        make install
         make lint
       workingDirectory: $(projectRoot)
       displayName: "Run lint tests"
