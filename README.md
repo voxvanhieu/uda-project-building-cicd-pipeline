@@ -12,8 +12,6 @@ This project is for the Udacity Azure DevOps program submission. Including the T
 
 ## Instructions
 
-### TODO: Architectural Diagram
-
 ### How to run the Python project
 
 #### Manually deploy project to Azure App Service
@@ -25,13 +23,21 @@ az group create -l westus -n uda-project-rg
 az webapp up --sku F1 -n uda-project-flask-hieuvv -g uda-project-rg --runtime "PYTHON:3.10.9"
 ```
 
-![Deployed azure service]()
+![Deployed azure service](./imgs/00.1.deploy-manually.png)
 
-![Project running on Azure App Service]()
+![Project running on Azure App Service](./imgs/00.2.running-web-app.png)
 
 Modify the `<yourappname>` in the `make_predict_azure_app.sh` then execute it in terminal to see the result.
 
-![make_predict_azure_app.sh]()
+![make_predict_azure_app.sh](./imgs/00.3.make-prediction.png)
+
+[Home Page](https://uda-project-flask-hieuvv.azurewebsites.net)
+
+[Log](https://uda-project-flask-hieuvv.scm.azurewebsites.net/api/logs/docker)
+
+```bash
+az webapp log tail
+```
 
 #### Create Github repository
 
@@ -72,7 +78,7 @@ git clone git@github.com:voxvanhieu/uda-project-building-cicd-pipeline.git
 
 After clone the repository, click the `Open Editor` button on the top bar of Cloud Shell to open file browser and editor.
 
-![Project cloned into Azure Cloud Shell]()
+![Project cloned into Azure Cloud Shell](./imgs/04.azure-cloud-shell-ci.png)
 
 #### Create the Virtual Environment
 
@@ -90,17 +96,21 @@ Run the following code in the local machine.
 make all
 ```
 
-![Makefile test: make all]()
+![Make file: make test](./imgs/05.az-cloud-shell-make-test.png)
 
-* Output of streamed log files from deployed application
+![Makefile: make all](./imgs/05.az-cloud-shell-make-all.png)
+
+![Output of streamed log files from deployed application](./imgs/08.log-stream.png)
 
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+This project is just a prototype for Udacity course's lab. So, it's need to be improved:
+
+- Auto send CI/CD status message in to chat chanel (Discord, Telegram, etc.)
+- Add more test case / scenarios
+- CD the branch to a specified environment (dev, test, staging, prod, etc.)
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lp54Sc-jn5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
