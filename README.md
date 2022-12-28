@@ -113,4 +113,6 @@ This project is just a prototype for Udacity course's lab. So, it's need to be i
 
 ## Demo 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Lp54Sc-jn5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Please follow this link to see my demostration.
+
+[![Udacity Azure DevOps Project 2 - HieuVV](http://img.youtube.com/vi/Lp54Sc-jn5A/0.jpg)](https://www.youtube.com/watch?v=Lp54Sc-jn5A "Udacity Azure DevOps Project 2 - HieuVV")
