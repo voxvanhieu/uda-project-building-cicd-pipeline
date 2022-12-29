@@ -4,9 +4,11 @@
 
 This project is for the Udacity Azure DevOps program submission. Including the Trello Board, Project plan for Agile workflow and the Azure CICD pipelines instruction.
 
+![Architectural Diagram](./imgs/00.0.Diagram.png)
+
 ## Project Plan
 
-- [Trello Board](https://trello.com/invite/b/3umIO3Iu/ATTI5970848d340766c7101bbc0ff977d95b97A8587E/udacity-my-project-q1y22)
+- [Trello Board](https://trello.com/b/3umIO3Iu/udacity-my-project-q1y22)
 - [Project Plan](docs/project-management.xlsx)
 - [Project Plan Template](docs/project-management-template.xlsx)
 
@@ -23,9 +25,19 @@ az group create -l westus -n uda-project-rg
 az webapp up --sku F1 -n uda-project-flask-hieuvv -g uda-project-rg --runtime "PYTHON:3.10.9"
 ```
 
+*Deployed azure service*
 ![Deployed azure service](./imgs/00.1.deploy-manually.png)
 
+*Deployed project on Azure portal*
+![Deployed project on Azure portal](./imgs/00.4.webapp-on-azure-portal.png)
+
+*Project running on Azure App Service*
 ![Project running on Azure App Service](./imgs/00.2.running-web-app.png)
+
+*Successful Azure Pipeline deployment*
+![Successful Azure Pipeline deployment](./imgs/07.2.azure-devops-success.png)
+
+The web app has been deployed at: [uda-project-flask-hieuvv.azurewebsites.net](https://uda-project-flask-hieuvv.azurewebsites.net)
 
 Modify the `<yourappname>` in the `make_predict_azure_app.sh` then execute it in terminal to see the result.
 
@@ -38,6 +50,25 @@ Modify the `<yourappname>` in the `make_predict_azure_app.sh` then execute it in
 ```bash
 az webapp log tail
 ```
+
+#### Locust test run
+
+1. Install Locust
+
+```
+pip install locust
+```
+
+2. Start the python app:
+
+```
+export FLASK_APP=app.py
+flask run
+```
+
+3. Locust result
+
+![Locust test run](./imgs/09.locust-test.png)
 
 #### Create Github repository
 
